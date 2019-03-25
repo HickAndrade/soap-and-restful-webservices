@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\logonrmlocal\Desktop\TESTEZIN\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1434035773.index
+1806782207.index
+2014777365.index
+2641978413.index
+1829473538.index
+2004050039.index

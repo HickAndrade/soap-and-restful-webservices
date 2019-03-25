@@ -1,0 +1,15 @@
+package br.com.hickandrade.bo;
+
+public class EstoqueBO {
+	
+	private static EstoqueBO estoqueBo;
+
+	public static EstoqueBO getInstance() {
+		if (estoqueBo == null) {
+			estoqueBo = new EstoqueBO(); 
+		}
+		return estoqueBo;
+		
+	}
+	
+}

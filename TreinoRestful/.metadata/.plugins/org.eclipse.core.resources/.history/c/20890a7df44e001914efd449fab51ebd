@@ -1,0 +1,9 @@
+package br.com.hickandrade.bo;
+
+public class EstoqueBO {
+	
+	private static EstoqueBO estoqueBo;
+	
+	
+	
+}
