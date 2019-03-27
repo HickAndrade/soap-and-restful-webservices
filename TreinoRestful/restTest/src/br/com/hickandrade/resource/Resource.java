@@ -24,14 +24,16 @@ public class Resource {
 	static EstoqueBO estoqueBo = EstoqueBO.getInstance();
 	
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON) //tipo de informaçao que o RECURSO retorna
 	public List<TenisTO> listaTenis() {
 		return estoqueBo.lista();
 	}
 	
 	
+	
+	
 	@POST
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON) // tipo de informaçao que o recurso recebe
 	public Response cadastrar(TenisTO tenis, @Context UriInfo uriInfo){
 	estoqueBo.cadastrar(tenis);
 	UriBuilder builder = uriInfo.getAbsolutePathBuilder();
@@ -39,13 +41,15 @@ public class Resource {
 	return Response.created(builder.build()).build();
 	}
 	
+	
+	
+	
 	@GET
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public TenisTO buscar(@PathParam("id") int codigo){
 	return estoqueBo.buscar(codigo);
 	}
-	
 	
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)

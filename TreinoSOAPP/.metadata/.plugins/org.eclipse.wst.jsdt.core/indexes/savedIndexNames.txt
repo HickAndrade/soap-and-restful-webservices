@@ -1,6 +1,0 @@
-INDEX VERSION 1.4+C:\Users\logonrmlocal\Desktop\TreinoSOAPP\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-648540263.index
-3700355209.index
-833188455.index
-375566808.index
-3153518772.index

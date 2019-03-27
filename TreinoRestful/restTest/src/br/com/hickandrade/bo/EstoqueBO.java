@@ -6,17 +6,17 @@ import java.util.List;
 import br.com.hickandrade.to.TenisTO;
 
 public class EstoqueBO {
-	
+
 	private static EstoqueBO estoqueBo;
-	private static List<TenisTO> lista = new ArrayList<TenisTO>();
+	private static ArrayList<TenisTO> lista = new ArrayList<TenisTO>();
 
 	public static EstoqueBO getInstance() {
 		if (estoqueBo == null) {
-			estoqueBo = new EstoqueBO(); 
+			estoqueBo = new EstoqueBO();
 		}
-		return estoqueBo;	
+		return estoqueBo;
 	}
-	
+
 	public EstoqueBO() {
 		lista.add(new TenisTO(1, "Nike SB", 45));
 	}
@@ -26,15 +26,15 @@ public class EstoqueBO {
 	}
 
 	public void cadastrar(TenisTO tenis) {
-	lista.add(tenis);
+		lista.add(tenis);
 
 	}
 
 	public TenisTO buscar(int codigo) {
-		for (TenisTO tenis  : lista) {
+		for (TenisTO tenis : lista) {
 			if (tenis.getCodigo() == codigo) {
 				return tenis;
-			}	
+			}
 		}
 		return null;
 	}
@@ -48,7 +48,7 @@ public class EstoqueBO {
 				break;
 			}
 		}
-		
+
 	}
 
 	public void remover(int codigo) {
@@ -58,7 +58,5 @@ public class EstoqueBO {
 			}
 		}
 	}
-	
-	
-	
+
 }
